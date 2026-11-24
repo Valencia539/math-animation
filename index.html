@@ -11,7 +11,7 @@
 
     <p>Watch the animation below.</p>
 
-    <p>Controls: Use the keyboard to control the animation.</p>
+    <p>Controls: Tap trackpad or click mouse to fly higher.</p>
 
     <!-- Load p5.js first -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
@@ -26,9 +26,18 @@
 
     <h3>Borrowed Code and AI Tools</h3>
     <ul>
-        <li>p5.js library – used for creating the animation.</li>
-        <li>ChatGPT – used for coding assistance and debugging.</li>
-        <li>Other borrowed code: None (if applicable).</li>
+        <li>ChatGPT – used for coding assistance and debugging. <br> Code: if (playerX + playerWidth > collisionX && playerX < collisionX + collisonWidth && (playerY + playerHeight > collisionYFinal || playerY < collisionYFinal - 150
+  )){
+    noLoop();
+    textSize(40);
+    fill(255, 0, 0);
+    text("GAME OVER", 160, 200);
+  }</li>
+        <li>Gemini – used for coding assistance and debugging. <br> Code: velocity += 0.4; 
+  playerY = constrain(playerY + velocity, 16, 584); 
+  if (playerY === 16 || playerY === 584) velocity = 0; function mousePressed(){
+  velocity = -6;
+}</li>
     </ul>
 
 </body>
